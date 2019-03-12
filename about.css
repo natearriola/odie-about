@@ -197,10 +197,7 @@ a {
       height: 50px;
       line-height: 50px;
       transition: all 0.3s;
-      span {
-        transition: all 0.3s;
-        tranform: scale(1, 1);
-      }
+      
      
     }
     
