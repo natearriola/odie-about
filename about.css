@@ -361,12 +361,14 @@ ABOUT CONTENT
 
 .content{
     padding: 1rem;
+    padding-top: 3rem;
 }
 
 .about{
     font-family: 'Bungee Shade';
     color: #8dc8d8;
     font-size: 3rem;
+    
 
 }
 
