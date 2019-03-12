@@ -192,6 +192,7 @@ a {
       height: 50px;
       line-height: 50px;
       transition: all 0.3s;
+      top: 30px;
       
      
     }
@@ -352,8 +353,8 @@ ABOUT CONTENT
 }
 
 .content{
-    padding: 1rem;
-    padding-top: 3rem;
+    padding: 3rem;
+    padding-top: 5rem;
 }
 
 .about{
