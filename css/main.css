@@ -17,18 +17,21 @@ FONTS
 body {
   font-family: "roboto";
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  margin: 0 !important;
 }
 
-header .navbar {
+header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 3;
-  background-color: #7db9d1;
   height: 50px;
-  z-index: 5;
+  background-color: #7db9d1;
+}
+
+header .navbar {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,6 +40,13 @@ header .navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 50px;
+}
+
+@media (min-width: 900px) {
+  header .navbar {
+    padding-right: 50px;
+  }
 }
 
 header .navbar .logo {
@@ -58,23 +68,17 @@ header .navbar .main-nav {
   list-style-type: none;
 }
 
-header .navbar .active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
 header .navbar .main-nav li {
   letter-spacing: 1px;
   font-size: 16px;
   text-align: center;
   margin: 0 0 0px 15px;
+}
+
+@media (min-width: 900px) {
+  header .navbar .main-nav li {
+    font-size: 18px;
+  }
 }
 
 header .navbar .nav-links {
@@ -109,17 +113,22 @@ header .navbar .nav-links:hover:before {
   transform: scaleX(1);
 }
 
-header .aboutImg {
-  position: relative;
-  top: 50px;
+main {
+  margin-top: 50px;
+  background-color: #1f1f1f;
 }
 
-header .aboutImg img {
+main .aboutImg {
+  position: relative;
+}
+
+main .aboutImg img {
   max-width: 100%;
 }
 
-header .aboutImg h1 {
-  font-family: "Anton";
+main .aboutImg h1 {
+  font-family: "saatlische";
+  text-decoration: underline;
   font-size: 24px;
   color: #bf5c06;
   text-align: center;
@@ -136,138 +145,33 @@ header .aboutImg h1 {
 }
 
 @media (min-width: 600px) {
-  header .aboutImg h1 {
+  main .aboutImg h1 {
     font-size: 48px;
   }
 }
 
-@media (min-width: 1200px) {
-  header .aboutImg h1 {
+@media (min-width: 900px) {
+  main .aboutImg h1 {
     font-size: 64px;
   }
 }
 
+@media (min-width: 1200px) {
+  main .aboutImg h1 {
+    font-size: 100px;
+  }
+}
+
 @media (min-width: 1800px) {
-  header .aboutImg h1 {
-    font-size: 88px;
+  main .aboutImg h1 {
+    font-size: 150px;
   }
 }
 
-main {
-  position: relative;
-  top: 40px;
-  height: 65vh;
-  background-color: #1f1f1f;
-}
-
-@media (min-width: 600px) {
-  main {
-    height: 40vh;
-  }
-}
-
-@media (min-width: 600px) {
-  main .aboutContent {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-main .aboutContent .content {
+main .aboutContent {
+  height: 100vh;
   padding: 15px;
-  padding-bottom: 25px;
-}
-
-@media (min-width: 1200px) {
-  main .aboutContent .content {
-    padding: 25px;
-  }
-}
-
-@media (min-width: 1800px) {
-  main .aboutContent .content {
-    padding: 25px 150px 150px 150px;
-  }
-}
-
-main .aboutContent .content p {
-  font-size: 16px;
-  line-height: 200%;
-}
-
-@media (min-width: 1200px) {
-  main .aboutContent .content p {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 1800px) {
-  main .aboutContent .content p {
-    font-size: 24px;
-  }
-}
-
-main .aboutContent .content .author {
-  font-family: "Anton";
-  color: #ffffff;
-  letter-spacing: 1px;
-  font-size: 16px;
-  color: #7db9d1;
-}
-
-main .aboutContent .content p:nth-child(2) {
-  border-top: 1px solid rgba(244, 244, 244, 0.7);
-  font-family: "saattlische";
-  color: #fff7f0;
   width: 100%;
-}
-
-main .aboutContent .content .aboutBttn {
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-  height: 40px;
-  background-color: #f5a75d;
-}
-
-@media (min-width: 600px) {
-  main .aboutContent .content .aboutBttn {
-    margin-top: 50px;
-  }
-}
-
-main .aboutContent .content .aboutBttn .bttn {
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  font-size: 18px;
-  font-family: "Shadows into light";
-  background-color: #f5a75d;
-  height: 40px;
-  border: none;
-}
-
-footer {
-  position: relative;
-  top: 40px;
-  height: 20vh;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #7db9d1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -275,12 +179,85 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+@media (min-width: 900px) {
+  main .aboutContent {
+    padding: 25px 50px 50px 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .aboutContent {
+    padding: 25px 170px 170px 170px;
+    height: 100%;
+  }
+}
+
+@media (min-width: 1800px) {
+  main .aboutContent {
+    padding: 25px 200px 200px 200px;
+  }
+}
+
+main .aboutContent p {
+  font-size: 16px;
+  line-height: 200%;
+}
+
+@media (min-width: 1200px) {
+  main .aboutContent p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1800px) {
+  main .aboutContent p {
+    font-size: 24px;
+  }
+}
+
+main .aboutContent .author {
+  font-family: "Anton";
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: #7db9d1;
+}
+
+main .aboutContent p:nth-child(2) {
+  border-top: 1px solid rgba(244, 244, 244, 0.7);
+  font-family: "saattlische";
+  color: #fff7f0;
+  width: 100%;
+}
+
+main .aboutContent a {
+  margin-top: 30px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #1f1f1f;
+  font-family: "Shadows into light";
+  padding: 20px 50px 20px 50px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  background-color: #f5a75d;
+}
+
+main .aboutContent a:hover {
+  letter-spacing: 1px;
+  background-color: #fff7f0;
+  -webkit-box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+          box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+footer {
+  height: 200px;
+  width: 100%;
+  background-color: #7db9d1;
   text-align: center;
 }
 
