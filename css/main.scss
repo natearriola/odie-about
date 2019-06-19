@@ -76,11 +76,15 @@ header {
     .logo {
       flex-grow: 1;
       padding-left: 20px;
-      font-family: "IBM Plex Sans";
-      color: transparent;
-      -webkit-text-stroke: 1px map-get($colors, accent);
-      letter-spacing: 3px;
-      font-size: 24px;
+
+      a {
+        font-family: "IBM Plex Sans";
+        color: transparent;
+        -webkit-text-stroke: 1px map-get($colors, accent);
+        letter-spacing: 3px;
+        font-size: 24px;
+        text-decoration: none;
+      }
     }
     .main-nav {
       display: flex;
