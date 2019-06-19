@@ -27,7 +27,7 @@ header {
   left: 0;
   right: 0;
   z-index: 3;
-  height: 50px;
+  height: 70px;
   background-color: #7db9d1;
 }
 
@@ -40,7 +40,7 @@ header .navbar {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 50px;
+  height: 70px;
 }
 
 @media (min-width: 900px) {
@@ -73,11 +73,13 @@ header .navbar .main-nav li {
   font-size: 16px;
   text-align: center;
   margin: 0 0 0px 15px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 900px) {
   header .navbar .main-nav li {
-    font-size: 18px;
+    font-size: 24px;
+    margin: 0 0 0px 25px;
   }
 }
 
@@ -114,7 +116,7 @@ header .navbar .nav-links:hover:before {
 }
 
 main {
-  margin-top: 50px;
+  margin-top: 70px;
   background-color: #1f1f1f;
 }
 
@@ -128,7 +130,6 @@ main .aboutImg img {
 
 main .aboutImg h1 {
   font-family: "saatlische";
-  text-decoration: underline;
   font-size: 24px;
   color: #bf5c06;
   text-align: center;
@@ -279,6 +280,6 @@ footer .socials {
 }
 
 footer .socials i {
-  padding-right: 15px;
+  padding-right: 20px;
 }
 /*# sourceMappingURL=main.css.map */
