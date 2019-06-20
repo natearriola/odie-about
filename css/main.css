@@ -121,55 +121,35 @@ header .navbar .nav-links:hover:before {
 
 main {
   margin-top: 70px;
-  background-color: #1f1f1f;
+  background-color: #fff7f0;
 }
 
 main .aboutImg {
-  position: relative;
-}
-
-main .aboutImg img {
-  max-width: 100%;
-}
-
-main .aboutImg h1 {
-  font-family: "saatlische";
-  font-size: 24px;
-  color: #bf5c06;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  position: absolute;
-  z-index: 1;
-  top: 20%;
-  -webkit-transform: translateY(-80%);
-          transform: translateY(-80%);
-  left: 70%;
-  -webkit-transform: translateX(-30%);
-          transform: translateX(-30%);
-}
-
-@media (min-width: 600px) {
-  main .aboutImg h1 {
-    font-size: 48px;
-  }
-}
-
-@media (min-width: 900px) {
-  main .aboutImg h1 {
-    font-size: 64px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
 }
 
 @media (min-width: 1200px) {
-  main .aboutImg h1 {
-    font-size: 100px;
+  main .aboutImg {
+    padding: 2rem;
   }
 }
 
-@media (min-width: 1800px) {
-  main .aboutImg h1 {
-    font-size: 150px;
+main .aboutImg img {
+  max-width: 80%;
+}
+
+@media (min-width: 1200px) {
+  main .aboutImg img {
+    max-width: 90%;
   }
 }
 
@@ -205,6 +185,28 @@ main .aboutContent {
   }
 }
 
+main .aboutContent h1 {
+  font-family: "IBM plex sans";
+  color: #7db9d1;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 36px;
+  padding: 0 15px 15px 15px;
+}
+
+@media (min-width: 900px) {
+  main .aboutContent h1 {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .aboutContent h1 {
+    font-size: 64px;
+  }
+}
+
 main .aboutContent p {
   font-size: 16px;
   line-height: 200%;
@@ -212,28 +214,30 @@ main .aboutContent p {
 
 @media (min-width: 1200px) {
   main .aboutContent p {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 1800px) {
-  main .aboutContent p {
     font-size: 24px;
   }
 }
 
 main .aboutContent .author {
-  font-family: "Anton";
-  color: #ffffff;
+  font-family: "shadows into light";
   letter-spacing: 1px;
-  font-size: 18px;
+  font-size: 12px;
   color: #7db9d1;
 }
 
-main .aboutContent p:nth-child(2) {
-  border-top: 1px solid rgba(244, 244, 244, 0.7);
+@media (min-width: 900px) {
+  main .aboutContent .author {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+main .aboutContent p:nth-child(3) {
+  border-top: 1px solid #595959;
   font-family: "saattlische";
-  color: #fff7f0;
+  color: #595959;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
 }
 
@@ -252,7 +256,8 @@ main .aboutContent a {
 
 main .aboutContent a:hover {
   letter-spacing: 1px;
-  background-color: #fff7f0;
+  background-color: #1f1f1f;
+  color: #fff7f0;
   -webkit-box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
           box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
   -webkit-transition: all 0.4s ease 0s;
