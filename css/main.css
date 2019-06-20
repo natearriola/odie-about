@@ -218,22 +218,33 @@ main .aboutContent p {
   }
 }
 
+main .aboutContent span {
+  font-size: 24px;
+  color: #7db9d1;
+  letter-spacing: 0;
+}
+
+@media (min-width: 1200px) {
+  main .aboutContent span {
+    font-size: 46px;
+  }
+}
+
 main .aboutContent .author {
   font-family: "shadows into light";
+  text-align: center;
   letter-spacing: 1px;
   font-size: 12px;
-  color: #7db9d1;
+  color: #bf5c06;
 }
 
 @media (min-width: 900px) {
   main .aboutContent .author {
     font-size: 18px;
-    text-align: center;
   }
 }
 
 main .aboutContent p:nth-child(3) {
-  border-top: 1px solid #595959;
   font-family: "saattlische";
   color: #595959;
   margin-left: auto;

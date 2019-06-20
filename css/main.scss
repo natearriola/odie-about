@@ -200,20 +200,27 @@ main {
       }
     }
 
+    span {
+      font-size: 24px;
+      @include for-desktop-up {
+        font-size: 46px;
+      }
+      color: map-get($colors, primary);
+      letter-spacing: 0;
+    }
+
     .author {
       font-family: "shadows into light";
-
+      text-align: center;
       letter-spacing: 1px;
       font-size: 12px;
-      color: map-get($colors, primary);
+      color: map-get($colors, accent2);
       @include for-tablet-landscape-up {
         font-size: 18px;
-        text-align: center;
       }
     }
 
     p:nth-child(3) {
-      border-top: 1px solid #595959;
       font-family: "saattlische";
       color: #595959;
       margin-left: auto;
